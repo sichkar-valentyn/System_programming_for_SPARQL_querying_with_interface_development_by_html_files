@@ -1,4 +1,15 @@
-﻿using System;
+// File: Form1.cs
+// Description: System programming in C# for SPARQL querying through KB with interface development by creating html files
+// Environment: Visual Studio 2015, C#
+//
+// MIT License
+// Copyright (c) 2017 Valentyn N Sichkar
+// github.com/sichkar-valentyn
+//
+// Reference to:
+// [1] Valentyn N Sichkar. System programming in C# for SPARQL querying through KB with interface development by creating html files // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files (date of access: XX.XX.XXXX)
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
