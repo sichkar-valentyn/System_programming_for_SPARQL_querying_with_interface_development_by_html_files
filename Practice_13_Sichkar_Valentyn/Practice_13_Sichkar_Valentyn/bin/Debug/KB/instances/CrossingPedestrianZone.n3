@@ -1,0 +1,10 @@
+@prefix carc: <KB/classes/>.
+@prefix carp: <KB/properties/>.
+@prefix cari: <KB/instances/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+cari:CrossingPedestrianZone rdf:type owl:NamedIndividual, carc:DangerousSituations;
+carp:ConsistOf cari:ManyPeople;
+rdfs:label "Crossing_Pedestrian_Zone"@en.
