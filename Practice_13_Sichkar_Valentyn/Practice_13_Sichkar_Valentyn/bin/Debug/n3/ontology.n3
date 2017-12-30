@@ -1,0 +1,13 @@
+﻿@prefix my: <http://www.codeproject.com/KB/recipes/n3_notation#>.
+
+my:Peter a my:person, my:boy;
+    my:suffers my:acrophobia, my:insomnia, my:xenophobia;
+    my:name "Peter";
+    my:likes my:Kate.
+
+my:Mark a my:person, my:boy;
+    my:suffers my:insomnia;
+    my:name "Mark".
+
+my:Kate a my:person, my:girl;
+    my:name "Kate".

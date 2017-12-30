@@ -1,0 +1,470 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns0: <http://our-place.spb.ru/today#> .
+@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+
+<http://www.semanticweb.org/vadim/ontologies/2017/0/untitled-ontology-24> a owl:Ontology .
+<http://our-place.spb.ru/today#isNeededBy>
+  a owl:ObjectProperty, owl:TransitiveProperty ;
+  owl:inverseOf <http://our-place.spb.ru/today#needs> ;
+  rdfs:domain owl:Thing ;
+  rdfs:range owl:Thing .
+
+<http://our-place.spb.ru/today#needs>
+  a owl:ObjectProperty, owl:TransitiveProperty ;
+  rdfs:domain owl:Thing ;
+  rdfs:range owl:Thing .
+
+<http://our-place.spb.ru/today#needed> a owl:DatatypeProperty .
+<http://our-place.spb.ru/today#Algebra>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Math> .
+
+<http://our-place.spb.ru/today#Angles>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Geometry> .
+
+<http://our-place.spb.ru/today#Approximation>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Arythmetics> .
+
+<http://our-place.spb.ru/today#Area>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#2D> .
+
+<http://our-place.spb.ru/today#Arythmetics>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Math> .
+
+<http://our-place.spb.ru/today#Bearing>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Geometry> .
+
+<http://our-place.spb.ru/today#Common>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Number_thery> .
+
+<http://our-place.spb.ru/today#Coordinates>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Geometry> .
+
+<http://our-place.spb.ru/today#Decimal>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Arythmetics> .
+
+<http://our-place.spb.ru/today#Enlargement>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Tranformations> .
+
+<http://our-place.spb.ru/today#Equations>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Algebra> .
+
+<http://our-place.spb.ru/today#Expanding>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Algebra> .
+
+<http://our-place.spb.ru/today#Factorisation>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Number_thery> .
+
+<http://our-place.spb.ru/today#Formulae>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Algebra> .
+
+<http://our-place.spb.ru/today#Frac_with_diff_denom>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Operation_with_N_frac> .
+
+<http://our-place.spb.ru/today#Frac_with_the_same_denom>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Operation_with_N_frac> .
+
+<http://our-place.spb.ru/today#Fractions>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Arythmetics> .
+
+<http://our-place.spb.ru/today#Fractions_eq>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Equations> .
+
+<http://our-place.spb.ru/today#Geometry>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Math> .
+
+<http://our-place.spb.ru/today#Graphs>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Statistics> .
+
+<http://our-place.spb.ru/today#Inequalities>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Algebra> .
+
+<http://our-place.spb.ru/today#Irrational_eq>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Equations> .
+
+<http://our-place.spb.ru/today#Linear>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Equations> .
+
+<http://our-place.spb.ru/today#Math> a owl:Class .
+<http://our-place.spb.ru/today#Mean>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Types> .
+
+<http://our-place.spb.ru/today#Number>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Arythmetics> .
+
+<http://our-place.spb.ru/today#Number_thery>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Math> .
+
+<http://our-place.spb.ru/today#Number_types>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Number_thery> .
+
+<http://our-place.spb.ru/today#Operation_with_1_frac>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Fractions> .
+
+<http://our-place.spb.ru/today#Operation_with_1_num>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Number> .
+
+<http://our-place.spb.ru/today#Operation_with_2_nums>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Number> .
+
+<http://our-place.spb.ru/today#Operation_with_N_frac>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Fractions> .
+
+<http://our-place.spb.ru/today#Operations_order>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Arythmetics> .
+
+<http://our-place.spb.ru/today#Operations_with_HS>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Equations> .
+
+<http://our-place.spb.ru/today#Overlapping_sets>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Arythmetics> .
+
+<http://our-place.spb.ru/today#Persentages>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Arythmetics> .
+
+<http://our-place.spb.ru/today#Pie_chart>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Graphs> .
+
+<http://our-place.spb.ru/today#Probability>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Math> .
+
+<http://our-place.spb.ru/today#Proportions>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Arythmetics> .
+
+<http://our-place.spb.ru/today#Quadratic>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Equations> .
+
+<http://our-place.spb.ru/today#Ratios>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Arythmetics> .
+
+<http://our-place.spb.ru/today#Reflection>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Tranformations> .
+
+<http://our-place.spb.ru/today#Roots>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Algebra> .
+
+<http://our-place.spb.ru/today#Rotation>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Tranformations> .
+
+<http://our-place.spb.ru/today#Rules>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Geometry> .
+
+<http://our-place.spb.ru/today#Sequences>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Algebra> .
+
+<http://our-place.spb.ru/today#Simplification>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Algebra> .
+
+<http://our-place.spb.ru/today#Special_sequences>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Statistics> .
+
+<http://our-place.spb.ru/today#Statistics>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Math> .
+
+<http://our-place.spb.ru/today#Tests>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Number_thery> .
+
+<http://our-place.spb.ru/today#To_combine>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Probability> .
+
+<http://our-place.spb.ru/today#To_divide>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Probability> .
+
+<http://our-place.spb.ru/today#Tranformations>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Math> .
+
+<http://our-place.spb.ru/today#Translation>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Tranformations> .
+
+<http://our-place.spb.ru/today#Trigonometry>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Math> .
+
+<http://our-place.spb.ru/today#Trigonometry_and_right_triangles>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Trigonometry> .
+
+<http://our-place.spb.ru/today#Types>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Statistics> .
+
+<http://our-place.spb.ru/today#Units_conversion>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Arythmetics> .
+
+<http://our-place.spb.ru/today#surface_area>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#3D> .
+
+<http://our-place.spb.ru/today#with_negative_num>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Operation_with_2_nums> .
+
+<http://our-place.spb.ru/today#with_positive_num>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Operation_with_2_nums> .
+
+<http://our-place.spb.ru/today#2D>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Geometry> .
+
+<http://our-place.spb.ru/today#3D>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Geometry> .
+
+<http://our-place.spb.ru/today#Domain_and_Range>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Algebra> .
+
+<http://our-place.spb.ru/today#The_circle_of_+_and>
+  a owl:Class ;
+  rdfs:subClassOf <http://our-place.spb.ru/today#Trigonometry> .
+
+<http://our-place.spb.ru/today#Area_via_perimeter_and_inscribed_radius> a owl:NamedIndividual, <http://our-place.spb.ru/today#Area> .
+<http://our-place.spb.ru/today#Bearing_calc> a owl:NamedIndividual, <http://our-place.spb.ru/today#Bearing> .
+<http://our-place.spb.ru/today#Decimal_division>
+  a owl:NamedIndividual, <http://our-place.spb.ru/today#Arythmetics>, <http://our-place.spb.ru/today#Decimal>, <http://our-place.spb.ru/today#Math> ;
+  ns0:needs ns0:Mult_num_and_denom_by_same .
+
+ns0:Domain_calc
+  a owl:NamedIndividual, ns0:Algebra, ns0:Math, ns0:Domain_and_Range ;
+  ns0:isNeededBy ns0:eq_with_root_solution .
+
+ns0:Eliminate_roots
+  a owl:NamedIndividual, ns0:Roots ;
+  ns0:needs ns0:raise_HS_to_the_same_power .
+
+ns0:Fraction_eq_solution
+  a owl:NamedIndividual, ns0:Algebra, ns0:Equations, ns0:Fractions_eq, ns0:Math ;
+  ns0:needs ns0:Mult_num_and_denom_by_same, ns0:Multiply_HS_by_the_same_number, ns0:Open_brackets, ns0:add_frac_dif_denom, ns0:convert_fracs_to_the_same_denom, ns0:convert_to_op_with_positive_nums, ns0:divide, ns0:mult, ns0:mult_frac, ns0:mult_neg_nums .
+
+ns0:Fraction_reducing
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Fractions, ns0:Math, ns0:Operation_with_1_frac ;
+  ns0:isNeededBy ns0:Ratio_calculation .
+
+ns0:Mult_num_and_denom_by_same
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Fractions, ns0:Math, ns0:Operation_with_1_frac ;
+  ns0:isNeededBy ns0:Decimal_division, ns0:Fraction_eq_solution, ns0:add_frac_dif_denom, ns0:comp_frac_dif_denom, ns0:convert_fracs_to_the_same_denom, ns0:subb_frac_dif_denom .
+
+ns0:Multiply_HS_by_the_same_number
+  a owl:NamedIndividual, ns0:Algebra, ns0:Equations, ns0:Math, ns0:Operations_with_HS ;
+  ns0:needs ns0:Open_brackets, ns0:convert_to_op_with_positive_nums, ns0:divide, ns0:mult, ns0:mult_frac, ns0:mult_neg_nums .
+
+ns0:Open_brackets
+  a owl:NamedIndividual, ns0:Algebra, ns0:Math, ns0:Simplification ;
+  ns0:isNeededBy ns0:Fraction_eq_solution, ns0:Multiply_HS_by_the_same_number ;
+  ns0:needs ns0:convert_to_op_with_positive_nums, ns0:divide, ns0:mult, ns0:mult_frac, ns0:mult_neg_nums .
+
+ns0:Parallelogram_area
+  a owl:NamedIndividual, ns0:Area ;
+  ns0:needs ns0:Area_via_perimeter_and_inscribed_radius .
+
+ns0:Pie_chart_sectors_measure_calc a owl:NamedIndividual, ns0:Pie_chart .
+ns0:Quadrilateral_area
+  a owl:NamedIndividual, ns0:Area ;
+  ns0:needs ns0:Area_via_perimeter_and_inscribed_radius .
+
+ns0:Ratio_calculation
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Math, ns0:Ratios ;
+  ns0:needs ns0:Fraction_reducing .
+
+ns0:Rectengular_area a owl:NamedIndividual, ns0:Area .
+ns0:Supplementary_angles_calc
+  a owl:NamedIndividual, ns0:Angles ;
+  ns0:isNeededBy ns0:Bearing_calc .
+
+ns0:Trapezium_area
+  a owl:NamedIndividual, ns0:Area ;
+  ns0:needs ns0:Area_via_perimeter_and_inscribed_radius .
+
+ns0:Triangle_area
+  a owl:NamedIndividual, ns0:Area ;
+  ns0:needs ns0:Area_via_perimeter_and_inscribed_radius .
+
+ns0:add a owl:NamedIndividual, ns0:Arythmetics, ns0:Math, ns0:Number, ns0:Operation_with_2_nums, ns0:with_positive_num .
+ns0:add_frac_dif_denom
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Frac_with_diff_denom, ns0:Fractions, ns0:Math, ns0:Operation_with_N_frac ;
+  ns0:isNeededBy ns0:Fraction_eq_solution ;
+  ns0:needs ns0:Mult_num_and_denom_by_same, ns0:convert_fracs_to_the_same_denom .
+
+ns0:add_frac_the_same_denom a owl:NamedIndividual, ns0:Arythmetics, ns0:Frac_with_the_same_denom, ns0:Fractions, ns0:Math, ns0:Operation_with_N_frac .
+ns0:add_neg_nums
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Math, ns0:Number, ns0:Operation_with_2_nums, ns0:with_negative_num ;
+  ns0:needs ns0:convert_to_op_with_positive_nums, ns0:divide .
+
+ns0:add_the_same_numner_to_HS a owl:NamedIndividual, ns0:Operations_with_HS .
+ns0:circumference_area a owl:NamedIndividual, ns0:Area .
+ns0:comp_frac_dif_denom
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Frac_with_diff_denom, ns0:Fractions, ns0:Math, ns0:Operation_with_N_frac ;
+  ns0:needs ns0:Mult_num_and_denom_by_same, ns0:convert_fracs_to_the_same_denom .
+
+ns0:comp_frac_same_denom a owl:NamedIndividual, ns0:Arythmetics, ns0:Frac_with_the_same_denom, ns0:Fractions, ns0:Math, ns0:Operation_with_N_frac .
+ns0:cone_surf_area a owl:NamedIndividual, ns0:surface_area .
+ns0:convert_fracs_to_the_same_denom
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Frac_with_diff_denom, ns0:Fractions, ns0:Math, ns0:Operation_with_N_frac ;
+  ns0:isNeededBy ns0:Fraction_eq_solution, ns0:add_frac_dif_denom, ns0:comp_frac_dif_denom, ns0:subb_frac_dif_denom ;
+  ns0:needs ns0:Mult_num_and_denom_by_same .
+
+ns0:convert_to_op_with_positive_nums
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Math, ns0:Number, ns0:Operation_with_2_nums, ns0:with_negative_num ;
+  ns0:isNeededBy ns0:Fraction_eq_solution, ns0:Multiply_HS_by_the_same_number, ns0:Open_brackets, ns0:add_neg_nums, ns0:divide_neg_nums, ns0:mean, ns0:mult_neg_nums, ns0:subb_neg_nums ;
+  ns0:needs ns0:divide .
+
+ns0:cosine_rule a owl:NamedIndividual, ns0:Rules .
+ns0:cuboid_surf_area a owl:NamedIndividual, ns0:surface_area .
+ns0:cylinder_surf_area
+  a owl:NamedIndividual, ns0:surface_area ;
+  ns0:needs ns0:Rectengular_area .
+
+ns0:direct_proportions_calc
+  a owl:NamedIndividual, ns0:Proportions ;
+  ns0:isNeededBy ns0:Pie_chart_sectors_measure_calc .
+
+ns0:divide
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Math, ns0:Number, ns0:Operation_with_2_nums, ns0:with_positive_num ;
+  ns0:isNeededBy ns0:Fraction_eq_solution, ns0:Multiply_HS_by_the_same_number, ns0:Open_brackets, ns0:add_neg_nums, ns0:convert_to_op_with_positive_nums, ns0:divide_neg_nums, ns0:mean, ns0:mult_neg_nums, ns0:subb_neg_nums .
+
+ns0:divide_frac a owl:NamedIndividual, ns0:Arythmetics, ns0:Frac_with_diff_denom, ns0:Frac_with_the_same_denom, ns0:Fractions, ns0:Math, ns0:Operation_with_N_frac .
+ns0:divide_neg_nums
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Math, ns0:Number, ns0:Operation_with_2_nums, ns0:with_negative_num ;
+  ns0:isNeededBy ns0:mean ;
+  ns0:needs ns0:convert_to_op_with_positive_nums, ns0:divide .
+
+ns0:eq_with_root_solution
+  a owl:NamedIndividual, ns0:Algebra, ns0:Equations, ns0:Irrational_eq, ns0:Math ;
+  ns0:needs ns0:Domain_calc, ns0:raise_HS_to_the_same_power .
+
+ns0:full_square_transform
+  a owl:NamedIndividual, ns0:Quadratic ;
+  ns0:needs ns0:add_the_same_numner_to_HS .
+
+ns0:inverse_proportions_calc a owl:NamedIndividual, ns0:Proportions .
+ns0:mean
+  a owl:NamedIndividual, ns0:Mean ;
+  ns0:needs ns0:convert_to_op_with_positive_nums, ns0:divide, ns0:divide_neg_nums .
+
+ns0:mult
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Math, ns0:Number, ns0:Operation_with_2_nums, ns0:with_positive_num ;
+  ns0:isNeededBy ns0:Fraction_eq_solution, ns0:Multiply_HS_by_the_same_number, ns0:Open_brackets, ns0:mult_neg_nums .
+
+ns0:mult_frac
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Frac_with_diff_denom, ns0:Frac_with_the_same_denom, ns0:Fractions, ns0:Math, ns0:Operation_with_N_frac ;
+  ns0:isNeededBy ns0:Fraction_eq_solution, ns0:Multiply_HS_by_the_same_number, ns0:Open_brackets .
+
+ns0:mult_neg_nums
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Math, ns0:Number, ns0:Operation_with_2_nums, ns0:with_negative_num ;
+  ns0:isNeededBy ns0:Fraction_eq_solution, ns0:Multiply_HS_by_the_same_number, ns0:Open_brackets ;
+  ns0:needs ns0:convert_to_op_with_positive_nums, ns0:divide, ns0:mult .
+
+ns0:operations_order_rule
+  a owl:NamedIndividual, ns0:Operations_order ;
+  ns0:isNeededBy ns0:cosine_rule ;
+  ns0:needed "for cosine rule +1"@en .
+
+ns0:pyramid_surf_area
+  a owl:NamedIndividual, ns0:surface_area ;
+  ns0:needs ns0:Triangle_area .
+
+ns0:pythagorean_rule a owl:NamedIndividual, ns0:Rules .
+ns0:quadratic_eq_solve
+  a owl:NamedIndividual, ns0:Quadratic ;
+  ns0:needs ns0:full_square_transform .
+
+ns0:raise_HS_to_the_same_power
+  a owl:NamedIndividual, ns0:Algebra, ns0:Equations, ns0:Math, ns0:Operations_with_HS ;
+  ns0:isNeededBy ns0:eq_with_root_solution ;
+  ns0:needs ns0:short_multiplication_formulae .
+
+ns0:short_multiplication_formulae
+  a owl:NamedIndividual, ns0:Formulae ;
+  ns0:isNeededBy ns0:Eliminate_roots .
+
+ns0:sphere_surf_area a owl:NamedIndividual, ns0:surface_area .
+ns0:square_fraction
+  a owl:NamedIndividual, ns0:Fractions ;
+  ns0:isNeededBy ns0:pythagorean_rule ;
+  ns0:needs ns0:mult_frac ;
+  ns0:needed "for pythagorean +1"@en .
+
+ns0:subb a owl:NamedIndividual, ns0:Arythmetics, ns0:Math, ns0:Number, ns0:Operation_with_2_nums, ns0:with_positive_num .
+ns0:subb_frac_dif_denom
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Frac_with_diff_denom, ns0:Fractions, ns0:Math, ns0:Operation_with_N_frac ;
+  ns0:needs ns0:Mult_num_and_denom_by_same, ns0:convert_fracs_to_the_same_denom .
+
+ns0:subb_frac_the_same_denom a owl:NamedIndividual, ns0:Arythmetics, ns0:Frac_with_the_same_denom, ns0:Fractions, ns0:Math, ns0:Operation_with_N_frac .
+ns0:subb_neg_nums
+  a owl:NamedIndividual, ns0:Arythmetics, ns0:Math, ns0:Number, ns0:Operation_with_2_nums, ns0:with_negative_num ;
+  ns0:needs ns0:convert_to_op_with_positive_nums, ns0:divide .
+
+<urn:swrl#x> a <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#y> a <http://www.w3.org/2003/11/swrl#Variable> .
+[]
+  a <http://www.w3.org/2003/11/swrl#Imp> ;
+  ns1:body ( _:genid3 ) ;
+  ns1:head ( _:genid5 ) .
+
+_:genid3
+  a ns1:IndividualPropertyAtom ;
+  ns1:propertyPredicate ns0:needs ;
+  ns1:argument1 <urn:swrl#x> ;
+  ns1:argument2 <urn:swrl#y> .
+
+_:genid5
+  a ns1:IndividualPropertyAtom ;
+  ns1:propertyPredicate ns0:isNeededBy ;
+  ns1:argument1 <urn:swrl#y> ;
+  ns1:argument2 <urn:swrl#x> .
+

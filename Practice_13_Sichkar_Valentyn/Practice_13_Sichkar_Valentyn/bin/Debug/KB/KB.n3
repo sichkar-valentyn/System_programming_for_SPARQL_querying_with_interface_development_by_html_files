@@ -1,0 +1,251 @@
+﻿@prefix carc: <http://car-assistant.ru/classes#>.
+@prefix carp: <http://car-assistant.ru/properties#>.
+@prefix cari: <http://car-assistant.ru/instances#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+carc:AccidentFactors rdf:type owl:Class;
+rdfs:label "Accident_Factors"@en.
+
+carc:DangerousRoad rdf:type owl:Class;
+rdfs:label "Dangerous_Road"@en.
+
+carc:DangerousSituations rdf:type owl:Class;
+rdfs:label "Dangerous_Situations"@en.
+
+carc:LowObservability rdf:type owl:Class;
+rdfs:subClassOf carc:AccidentFactors;
+rdfs:label "Low_Observability"@en.
+
+carc:LowVisibility rdf:type owl:Class;
+rdfs:subClassOf carc:AccidentFactors;
+rdfs:label "Low_Visibility"@en.
+
+carc:SafetyDriving rdf:type owl:Class;
+rdfs:label "Safety_Driving"@en.
+
+carc:Sensors rdf:type owl:Class;
+rdfs:label "Sensors"@en.
+
+carp:CanCause rdf:type owl:ObjectProperty, owl:FunctionalProperty, owl:AsymmetricProperty, owl:IrreflexiveProperty;
+rdfs:domain carc:AccidentFactors, carc:DangerousSituations;
+rdfs:range carc:AccidentFactors, carc:DangerousSituations.
+
+carp:Causes rdf:type owl:ObjectProperty, owl:FunctionalProperty, owl:AsymmetricProperty, owl:IrreflexiveProperty;
+rdfs:domain carc:DangerousSituations;
+rdfs:range carc:DangerousSituations.
+
+carp:ConsistOf rdf:type owl:ObjectProperty, owl:FunctionalProperty, owl:AsymmetricProperty, owl:IrreflexiveProperty;
+rdfs:domain carc:AccidentFactors, carc:DangerousSituations;
+rdfs:range carc:AccidentFactors, carc:DangerousSituations.
+
+cari:3DDigitalMap rdf:type owl:NamedIndividual, carc:Sensors;
+rdfs:label "3D_Digital_Map"@en.
+
+cari:BadHealth rdf:type owl:NamedIndividual, carc:AccidentFactors;
+carp:CanCause cari:LowReaction, cari:SleepyDriver;
+carp:ConsistOf cari:TakingAntibiotics.
+
+cari:BadService rdf:type owl:NamedIndividual, carc:AccidentFactors;
+carp:CanCause cari:BrokenCar.
+
+cari:BadWeather rdf:type owl:NamedIndividual, carc:AccidentFactors;
+carp:ConsistOf cari:Grad, cari:HighTemperature, cari:LowTemperature, cari:Rain, cari:Storm, cari:Thunder.
+
+cari:BlindsSpots rdf:type owl:NamedIndividual, carc:LowObservability;
+rdfs:label "Blinds_Spots"@en.
+
+cari:BrightLights rdf:type owl:NamedIndividual, carc:LowVisibility;
+rdfs:label "Bright_Lights"@en.
+
+cari:BrightSun rdf:type owl:NamedIndividual, carc:LowVisibility;
+rdfs:label "Bright_Sun"@en.
+
+cari:BrokenCar rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Broken_Car"@en.
+
+cari:Cameras rdf:type owl:NamedIndividual, carc:Sensors;
+rdfs:label "Cameras"@en.
+
+cari:Concentrating rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Concentrating"@en.
+
+cari:CrossingBridge rdf:type owl:NamedIndividual, carc:DangerousSituations;
+carp:ConsistOf cari:NarrowPlace;
+rdfs:label "CrossingBridge"@en.
+
+cari:CrossingPedestrianZone rdf:type owl:NamedIndividual, carc:DangerousSituations;
+carp:ConsistOf cari:ManyPeople;
+rdfs:label "Crossing_Pedestrian_Zone"@en.
+
+cari:CrossingRailwayZone rdf:type owl:NamedIndividual, carc:DangerousSituations;
+carp:ConsistOf cari:FastTrains;
+rdfs:label "Crossing_Railway_Zone"@en.
+
+cari:CrossingTunnel rdf:type owl:NamedIndividual, carc:DangerousSituations;
+carp:ConsistOf cari:DarkPlace;
+rdfs:label "Crossing_Tunnel"@en.
+
+cari:DarkPlace rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Dark_Place"@en.
+
+cari:Distractions rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Distractions"@en.
+
+cari:DownHill rdf:type owl:NamedIndividual, carc:DangerousRoad;
+carp:Causes cari:DrivingDown;
+rdfs:label "Down_Hill"@en.
+
+cari:DrankDriver rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Drank_Driver"@en.
+
+cari:DrivingDown rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Driving_Down"@en.
+
+cari:DrivingInTheFog rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Driving_In_The_Fog"@en.
+
+cari:DrivingLicense rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Driving_License"@en.
+
+cari:DrivingUp rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Driving_Up"@en.
+
+cari:Dusk rdf:type owl:NamedIndividual, carc:LowVisibility;
+rdfs:label "Dusk"@en.
+
+cari:Eating rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Eating"@en.
+
+cari:ExperiencedDriver rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Experienced_Driver"@en.
+
+cari:FastenBelts rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Fasten_Belts"@en.
+
+cari:FastTrains rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Fast_Trains"@en.
+
+cari:FollowingRules rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Following_Rules"@en.
+
+cari:FoodInTheCar rdf:type owl:NamedIndividual, carc:DangerousSituations;
+carp:CanCause cari:Eating;
+rdfs:label "Food_In_The_Car"@en.
+
+cari:GoodHealth rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Good_Health"@en.
+
+cari:GoodService rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Good_Service"@en.
+
+cari:GoodWeather rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Good_Weather"@en.
+
+cari:Grad rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Grad"@en.
+
+cari:HeavyTraffic rdf:type owl:NamedIndividual, carc:AccidentFactors;
+carp:ConsistOf cari:ManyCars;
+rdfs:label "Heavy_Traffic"@en.
+
+cari:HighTemperature rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "High_Temperature"@en.
+
+cari:Hill rdf:type owl:NamedIndividual, carc:DangerousRoad;
+carp:Causes cari:DrivingUp;
+rdfs:label "Hill"@en.
+
+cari:Ice rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Ice"@en.
+
+cari:LaserScanner rdf:type owl:NamedIndividual, carc:Sensors;
+rdfs:label "Laser_Scanner"@en.
+
+cari:LowReaction rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Low_Reaction"@en.
+
+cari:LowTemperature rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Low_Temperature"@en.
+
+cari:LowTraffic rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Low_Traffic"@en.
+
+cari:ManyCars rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Many_Cars"@en.
+
+cari:ManyPeople rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Many_People"@en.
+
+cari:NarrowPlace rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Narrow_Place"@en.
+
+cari:NotFastenBelts rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Not_Fasten_Belts"@en.
+
+cari:OvertakingBicycle rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Overtaking_Bicycle"@en.
+
+cari:OvertakingCar rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Overtaking_Car"@en.
+
+cari:PassengersInTheCar rdf:type owl:NamedIndividual, carc:DangerousSituations;
+carp:CanCause cari:TalkingPassengers;
+rdfs:label "Passengers_In_The_Car"@en.
+
+cari:PhoneCalling rdf:type owl:NamedIndividual, carc:DangerousSituations;
+carp:ConsistOf cari:SpeechConcentrating;
+rdfs:label "Phone_Calling"@en.
+
+cari:RadarTransmitters rdf:type owl:NamedIndividual, carc:Sensors;
+rdfs:label "Radar_Transmitters"@en.
+
+cari:Rain rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Rain"@en.
+
+cari:RoadQuality rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Road_Quality"@en.
+
+cari:Sand rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Sand"@en.
+
+cari:SleepyDriver rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Sleepy_Driver"@en.
+
+cari:SlipperySurface rdf:type owl:NamedIndividual, carc:AccidentFactors;
+carp:ConsistOf cari:Ice;
+rdfs:label "Slippery_Surface"@en.
+
+cari:SpeechConcentrating rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Speech_Concentrating"@en.
+
+cari:Speeding rdf:type owl:NamedIndividual, carc:DangerousSituations;
+rdfs:label "Speeding"@en.
+
+cari:Storm rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Storm"@en.
+
+cari:TakingAntibiotics rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Taking_Antibiotics"@en.
+
+cari:TalkingPassengers rdf:type owl:NamedIndividual, carc:DangerousSituations;
+carp:ConsistOf cari:Distractions;
+rdfs:label "Talking_Passengers"@en.
+
+cari:Thunder rdf:type owl:NamedIndividual, carc:AccidentFactors;
+rdfs:label "Thunder"@en.
+
+cari:TrafficLights rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Traffic_Lights"@en.
+
+cari:UltrasonicSensors rdf:type owl:NamedIndividual, carc:Sensors;
+rdfs:label "Ultrasonic_Sensors"@en.
+
+cari:ViscousGround rdf:type owl:NamedIndividual, carc:AccidentFactors;
+carp:ConsistOf cari:Sand;
+rdfs:label "Viscous_Ground"@en.
+
+cari:ZeroAlcohol rdf:type owl:NamedIndividual, carc:SafetyDriving;
+rdfs:label "Zero_Alcohol"@en.
+
