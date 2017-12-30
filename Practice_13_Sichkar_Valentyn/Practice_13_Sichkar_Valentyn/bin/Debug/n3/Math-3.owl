@@ -1,0 +1,1302 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vadim/ontologies/2017/0/untitled-ontology-24#"
+     xml:base="http://www.semanticweb.org/vadim/ontologies/2017/0/untitled-ontology-24"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:today="http://our-place.spb.ru/today#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vadim/ontologies/2017/0/untitled-ontology-24"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://our-place.spb.ru/today#isNeededBy -->
+
+    <owl:ObjectProperty rdf:about="http://our-place.spb.ru/today#isNeededBy">
+        <owl:inverseOf rdf:resource="http://our-place.spb.ru/today#needs"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://our-place.spb.ru/today#needs -->
+
+    <owl:ObjectProperty rdf:about="http://our-place.spb.ru/today#needs">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://our-place.spb.ru/today#needed -->
+
+    <owl:DatatypeProperty rdf:about="http://our-place.spb.ru/today#needed"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://our-place.spb.ru/today#Algebra -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Algebra">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Math"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Angles -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Angles">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Approximation -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Approximation">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Area -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Area">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#2D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Arythmetics -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Arythmetics">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Math"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Bearing -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Bearing">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Common -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Common">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Number_thery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Coordinates -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Coordinates">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Decimal -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Decimal">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Enlargement -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Enlargement">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Tranformations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Equations -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Equations">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Expanding -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Expanding">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Factorisation -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Factorisation">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Number_thery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Formulae -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Formulae">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Frac_with_diff_denom -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Frac_with_diff_denom">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Operation_with_N_frac"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Frac_with_the_same_denom -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Frac_with_the_same_denom">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Operation_with_N_frac"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Fractions -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Fractions">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Fractions_eq -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Fractions_eq">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Equations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Geometry -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Geometry">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Math"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Graphs -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Graphs">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Inequalities -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Inequalities">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Irrational_eq -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Irrational_eq">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Equations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Linear -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Linear">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Equations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Math -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Math"/>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Mean -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Mean">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Number -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Number">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Number_thery -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Number_thery">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Math"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Number_types -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Number_types">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Number_thery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Operation_with_1_frac -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Operation_with_1_frac">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Operation_with_1_num -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Operation_with_1_num">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Number"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Operation_with_2_nums -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Operation_with_2_nums">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Number"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Operation_with_N_frac -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Operation_with_N_frac">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Operations_order -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Operations_order">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Operations_with_HS -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Operations_with_HS">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Equations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Overlapping_sets -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Overlapping_sets">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Persentages -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Persentages">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Pie_chart -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Pie_chart">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Graphs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Probability -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Probability">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Math"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Proportions -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Proportions">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Quadratic -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Quadratic">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Equations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Ratios -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Ratios">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Reflection -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Reflection">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Tranformations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Roots -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Roots">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Rotation -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Rotation">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Tranformations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Rules -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Rules">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Sequences -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Sequences">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Simplification -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Simplification">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Special_sequences -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Special_sequences">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Statistics -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Statistics">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Math"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Tests -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Tests">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Number_thery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#To_combine -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#To_combine">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Probability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#To_divide -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#To_divide">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Probability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Tranformations -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Tranformations">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Math"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Translation -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Translation">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Tranformations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Trigonometry -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Trigonometry">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Math"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Trigonometry_and_right_triangles -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Trigonometry_and_right_triangles">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Trigonometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Types -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Types">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Statistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Units_conversion -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Units_conversion">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#surface_area -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#surface_area">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#3D"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#with_negative_num -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#with_negative_num">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Operation_with_2_nums"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#with_positive_num -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#with_positive_num">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Operation_with_2_nums"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#2D -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#2D">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#3D -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#3D">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Geometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Domain&amp;Range -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#Domain&amp;Range">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://our-place.spb.ru/today#The_circle_of_+_and -->
+
+    <owl:Class rdf:about="http://our-place.spb.ru/today#The_circle_of_+_and">
+        <rdfs:subClassOf rdf:resource="http://our-place.spb.ru/today#Trigonometry"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://our-place.spb.ru/today#Area_via_perimeter_and_inscribed_radius -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Area_via_perimeter_and_inscribed_radius">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Bearing_calc -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Bearing_calc">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Bearing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Decimal_division -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Decimal_division">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Decimal"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Mult_num_and_denom_by_same"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Domain_calc -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Domain_calc">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Domain&amp;Range"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#eq_with_root_solution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Eliminate_roots -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Eliminate_roots">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Roots"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#raise_HS_to_the_same_power"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Fraction_eq_solution -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Fraction_eq_solution">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Equations"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions_eq"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Mult_num_and_denom_by_same"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Multiply_HS_by_the_same_number"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Open_brackets"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#add_frac_dif_denom"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_fracs_to_the_same_denom"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_to_op_with_positive_nums"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#divide"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#mult"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#mult_frac"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#mult_neg_nums"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Fraction_reducing -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Fraction_reducing">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_1_frac"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Ratio_calculation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Mult_num_and_denom_by_same -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Mult_num_and_denom_by_same">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_1_frac"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Decimal_division"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Fraction_eq_solution"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#add_frac_dif_denom"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#comp_frac_dif_denom"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#convert_fracs_to_the_same_denom"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#subb_frac_dif_denom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Multiply_HS_by_the_same_number -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Multiply_HS_by_the_same_number">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Equations"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operations_with_HS"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Open_brackets"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_to_op_with_positive_nums"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#divide"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#mult"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#mult_frac"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#mult_neg_nums"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Open_brackets -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Open_brackets">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Simplification"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Fraction_eq_solution"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Multiply_HS_by_the_same_number"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_to_op_with_positive_nums"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#divide"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#mult"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#mult_frac"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#mult_neg_nums"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Parallelogram_area -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Parallelogram_area">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Area"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Area_via_perimeter_and_inscribed_radius"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Pie_chart_sectors_measure_calc -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Pie_chart_sectors_measure_calc">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Pie_chart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Quadrilateral_area -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Quadrilateral_area">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Area"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Area_via_perimeter_and_inscribed_radius"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Ratio_calculation -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Ratio_calculation">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Ratios"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Fraction_reducing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Rectengular_area -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Rectengular_area">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Supplementary_angles_calc -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Supplementary_angles_calc">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Angles"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Bearing_calc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Trapezium_area -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Trapezium_area">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Area"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Area_via_perimeter_and_inscribed_radius"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#Triangle_area -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#Triangle_area">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Area"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Area_via_perimeter_and_inscribed_radius"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#add -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#add">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Number"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_2_nums"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#with_positive_num"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#add_frac_dif_denom -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#add_frac_dif_denom">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Frac_with_diff_denom"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_N_frac"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Fraction_eq_solution"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Mult_num_and_denom_by_same"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_fracs_to_the_same_denom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#add_frac_the_same_denom -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#add_frac_the_same_denom">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Frac_with_the_same_denom"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_N_frac"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#add_neg_nums -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#add_neg_nums">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Number"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_2_nums"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#with_negative_num"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_to_op_with_positive_nums"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#divide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#add_the_same_numner_to_HS -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#add_the_same_numner_to_HS">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operations_with_HS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#circumference_area -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#circumference_area">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#comp_frac_dif_denom -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#comp_frac_dif_denom">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Frac_with_diff_denom"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_N_frac"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Mult_num_and_denom_by_same"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_fracs_to_the_same_denom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#comp_frac_same_denom -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#comp_frac_same_denom">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Frac_with_the_same_denom"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_N_frac"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#cone_surf_area -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#cone_surf_area">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#surface_area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#convert_fracs_to_the_same_denom -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#convert_fracs_to_the_same_denom">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Frac_with_diff_denom"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_N_frac"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Fraction_eq_solution"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#add_frac_dif_denom"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#comp_frac_dif_denom"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#subb_frac_dif_denom"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Mult_num_and_denom_by_same"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#convert_to_op_with_positive_nums -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#convert_to_op_with_positive_nums">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Number"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_2_nums"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#with_negative_num"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Fraction_eq_solution"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Multiply_HS_by_the_same_number"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Open_brackets"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#add_neg_nums"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#divide_neg_nums"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#mean"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#mult_neg_nums"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#subb_neg_nums"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#divide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#cosine_rule -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#cosine_rule">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Rules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#cuboid_surf_area -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#cuboid_surf_area">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#surface_area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#cylinder_surf_area -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#cylinder_surf_area">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#surface_area"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Rectengular_area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#direct_proportions_calc -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#direct_proportions_calc">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Proportions"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Pie_chart_sectors_measure_calc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#divide -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#divide">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Number"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_2_nums"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#with_positive_num"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Fraction_eq_solution"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Multiply_HS_by_the_same_number"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Open_brackets"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#add_neg_nums"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#convert_to_op_with_positive_nums"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#divide_neg_nums"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#mean"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#mult_neg_nums"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#subb_neg_nums"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#divide_frac -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#divide_frac">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Frac_with_diff_denom"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Frac_with_the_same_denom"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_N_frac"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#divide_neg_nums -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#divide_neg_nums">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Number"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_2_nums"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#with_negative_num"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#mean"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_to_op_with_positive_nums"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#divide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#eq_with_root_solution -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#eq_with_root_solution">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Equations"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Irrational_eq"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Domain_calc"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#raise_HS_to_the_same_power"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#full_square_transform -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#full_square_transform">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Quadratic"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#add_the_same_numner_to_HS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#inverse_proportions_calc -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#inverse_proportions_calc">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Proportions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#mean -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#mean">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Mean"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_to_op_with_positive_nums"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#divide"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#divide_neg_nums"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#mult -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#mult">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Number"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_2_nums"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#with_positive_num"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Fraction_eq_solution"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Multiply_HS_by_the_same_number"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Open_brackets"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#mult_neg_nums"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#mult_frac -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#mult_frac">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Frac_with_diff_denom"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Frac_with_the_same_denom"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_N_frac"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Fraction_eq_solution"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Multiply_HS_by_the_same_number"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Open_brackets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#mult_neg_nums -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#mult_neg_nums">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Number"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_2_nums"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#with_negative_num"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Fraction_eq_solution"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Multiply_HS_by_the_same_number"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Open_brackets"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_to_op_with_positive_nums"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#divide"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#mult"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#operations_order_rule -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#operations_order_rule">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operations_order"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#cosine_rule"/>
+        <today:needed xml:lang="en">for cosine rule +1</today:needed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#pyramid_surf_area -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#pyramid_surf_area">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#surface_area"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Triangle_area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#pythagorean_rule -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#pythagorean_rule">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Rules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#quadratic_eq_solve -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#quadratic_eq_solve">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Quadratic"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#full_square_transform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#raise_HS_to_the_same_power -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#raise_HS_to_the_same_power">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Algebra"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Equations"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operations_with_HS"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#eq_with_root_solution"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#short_multiplication_formulae"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#short_multiplication_formulae -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#short_multiplication_formulae">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Formulae"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#Eliminate_roots"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#sphere_surf_area -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#sphere_surf_area">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#surface_area"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#square_fraction -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#square_fraction">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <today:isNeededBy rdf:resource="http://our-place.spb.ru/today#pythagorean_rule"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#mult_frac"/>
+        <today:needed xml:lang="en">for pythagorean +1</today:needed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#subb -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#subb">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Number"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_2_nums"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#with_positive_num"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#subb_frac_dif_denom -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#subb_frac_dif_denom">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Frac_with_diff_denom"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_N_frac"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#Mult_num_and_denom_by_same"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_fracs_to_the_same_denom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#subb_frac_the_same_denom -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#subb_frac_the_same_denom">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Frac_with_the_same_denom"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Fractions"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_N_frac"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://our-place.spb.ru/today#subb_neg_nums -->
+
+    <owl:NamedIndividual rdf:about="http://our-place.spb.ru/today#subb_neg_nums">
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Arythmetics"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Math"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Number"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#Operation_with_2_nums"/>
+        <rdf:type rdf:resource="http://our-place.spb.ru/today#with_negative_num"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#convert_to_op_with_positive_nums"/>
+        <today:needs rdf:resource="http://our-place.spb.ru/today#divide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://our-place.spb.ru/today#needs"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://our-place.spb.ru/today#isNeededBy"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,149 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns0: <http://car-assistant.ru/description#> .
+
+<http://www.semanticweb.org/valentyn/ontologies/2017/3/untitled-ontology-2> a owl:Ontology .
+<http://car-assistant.ru/description#CanCause>
+  a owl:ObjectProperty, owl:FunctionalProperty, owl:AsymmetricProperty, owl:IrreflexiveProperty ;
+  rdfs:domain <http://car-assistant.ru/description#AccidentFactors>, <http://car-assistant.ru/description#DangerousSituations> ;
+  rdfs:range <http://car-assistant.ru/description#AccidentFactors>, <http://car-assistant.ru/description#DangerousSituations> .
+
+<http://car-assistant.ru/description#Causes>
+  a owl:ObjectProperty, owl:FunctionalProperty, owl:AsymmetricProperty, owl:IrreflexiveProperty ;
+  rdfs:domain <http://car-assistant.ru/description#DangerousSituations> ;
+  rdfs:range <http://car-assistant.ru/description#DangerousSituations> .
+
+<http://car-assistant.ru/description#ConsistOf>
+  a owl:ObjectProperty, owl:FunctionalProperty, owl:AsymmetricProperty, owl:IrreflexiveProperty ;
+  rdfs:domain <http://car-assistant.ru/description#AccidentFactors>, <http://car-assistant.ru/description#DangerousSituations> ;
+  rdfs:range <http://car-assistant.ru/description#AccidentFactors>, <http://car-assistant.ru/description#DangerousSituations> .
+
+<http://car-assistant.ru/description#name> a owl:DatatypeProperty .
+<http://car-assistant.ru/description#AccidentFactors> a owl:Class .
+<http://car-assistant.ru/description#DangerousRoad> a owl:Class .
+<http://car-assistant.ru/description#DangerousSituations> a owl:Class .
+<http://car-assistant.ru/description#LowObservability>
+  a owl:Class ;
+  rdfs:subClassOf <http://car-assistant.ru/description#AccidentFactors> .
+
+<http://car-assistant.ru/description#LowVisibility>
+  a owl:Class ;
+  rdfs:subClassOf <http://car-assistant.ru/description#AccidentFactors> ;
+  rdfs:comment "zdxcvsxv" .
+
+<http://car-assistant.ru/description#SafetyDriving> a owl:Class .
+<http://car-assistant.ru/description#Sensors> a owl:Class .
+<http://car-assistant.ru/description#BadHealth>
+  a owl:NamedIndividual, <http://car-assistant.ru/description#AccidentFactors> ;
+  ns0:CanCause ns0:LowReaction, ns0:SleepyDriver ;
+  ns0:ConsistOf ns0:TakingAntibiotics .
+
+ns0:BadService
+  a owl:NamedIndividual, ns0:AccidentFactors ;
+  ns0:CanCause ns0:BrokenCar .
+
+ns0:BadWeather
+  a owl:NamedIndividual, ns0:AccidentFactors ;
+  ns0:ConsistOf ns0:Grad, ns0:HighTemperature, ns0:LowTemperature, ns0:Rain, ns0:Storm, ns0:Thunder .
+
+ns0:BlindsSpots a owl:NamedIndividual, ns0:LowObservability .
+ns0:BrightLights a owl:NamedIndividual, ns0:LowVisibility .
+ns0:BrightSun a owl:NamedIndividual, ns0:LowVisibility .
+ns0:BrokenCar a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:Cameras a owl:NamedIndividual, ns0:Sensors .
+ns0:Concentrating a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:CrossingBridge
+  a owl:NamedIndividual, ns0:DangerousSituations ;
+  ns0:ConsistOf ns0:NarrowPlace .
+
+ns0:CrossingPedestrianZone
+  a owl:NamedIndividual, ns0:DangerousSituations ;
+  ns0:ConsistOf ns0:ManyPeople .
+
+ns0:CrossingRailwayZone
+  a owl:NamedIndividual, ns0:DangerousSituations ;
+  ns0:ConsistOf ns0:FastTrains .
+
+ns0:CrossingTunnel
+  a owl:NamedIndividual, ns0:DangerousSituations ;
+  ns0:ConsistOf ns0:DarkPlace .
+
+ns0:DarkPlace a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:Distractions a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:DownHill
+  a owl:NamedIndividual, ns0:DangerousRoad ;
+  ns0:Causes ns0:DrivingDown .
+
+ns0:DrankDriver a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:DrivingDown a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:DrivingInTheFog a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:DrivingLicense a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:DrivingUp a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:Dusk a owl:NamedIndividual, ns0:LowVisibility .
+ns0:Eating a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:ExperiencedDriver a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:FastTrains a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:FastenBelts a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:FollowingRules a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:FoodInTheCar
+  a owl:NamedIndividual, ns0:DangerousSituations ;
+  ns0:CanCause ns0:Eating .
+
+ns0:GoodHealth a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:GoodService a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:GoodWeather a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:Grad a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:HeavyTraffic
+  a owl:NamedIndividual, ns0:AccidentFactors ;
+  ns0:ConsistOf ns0:ManyCars .
+
+ns0:HighTemperature a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:Hill
+  a owl:NamedIndividual, ns0:DangerousRoad ;
+  ns0:Causes ns0:DrivingUp .
+
+ns0:Ice a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:LaserScanner a owl:NamedIndividual, ns0:Sensors .
+ns0:LowReaction a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:LowTemperature a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:LowTraffic a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:ManyCars a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:ManyPeople a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:NarrowPlace a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:NotFastenBelts a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:OvertakingBicycle a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:OvertakingCar a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:PassengersInTheCar
+  a owl:NamedIndividual, ns0:DangerousSituations ;
+  ns0:CanCause ns0:TalkingPassengers .
+
+ns0:PhoneCalling
+  a owl:NamedIndividual, ns0:DangerousSituations ;
+  ns0:ConsistOf ns0:SpeechConcentrating .
+
+ns0:RadarTransmitters a owl:NamedIndividual, ns0:Sensors .
+ns0:Rain a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:RoadQuality a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:Sand a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:SleepyDriver a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:SlipperySurface
+  a owl:NamedIndividual, ns0:AccidentFactors ;
+  ns0:ConsistOf ns0:Ice .
+
+ns0:SpeechConcentrating a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:Speeding a owl:NamedIndividual, ns0:DangerousSituations .
+ns0:Storm a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:TakingAntibiotics a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:TalkingPassengers
+  a owl:NamedIndividual, ns0:DangerousSituations ;
+  ns0:ConsistOf ns0:Distractions .
+
+ns0:Thunder a owl:NamedIndividual, ns0:AccidentFactors .
+ns0:TrafficLights a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:UltrasonicSensors a owl:NamedIndividual, ns0:Sensors .
+ns0:ViscousGround
+  a owl:NamedIndividual, ns0:AccidentFactors ;
+  ns0:ConsistOf ns0:Sand .
+
+ns0:ZeroAlcohol a owl:NamedIndividual, ns0:SafetyDriving .
+ns0:DDigitalMap a owl:NamedIndividual, ns0:Sensors .
