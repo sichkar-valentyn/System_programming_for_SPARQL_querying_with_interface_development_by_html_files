@@ -1,6 +1,6 @@
 // File: Form1.cs
 // Description: System programming in C# for SPARQL querying through KB with interface development by creating html files
-// Environment: Visual Studio 2015, C#
+// Environment: Visual Studio 2015 and C#
 //
 // MIT License
 // Copyright (c) 2017 Valentyn N Sichkar
