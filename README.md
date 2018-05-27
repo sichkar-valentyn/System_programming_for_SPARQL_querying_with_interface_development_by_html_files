@@ -23,7 +23,7 @@ Program creates .html files for each class, property and instance. Program gener
 ![Results](images/Finding_what_are_accident_factors.png)
 
 ## MIT License
-## Copyright (c) 2018 Valentyn N Sichkar
+## Copyright (c) 2017 Valentyn N Sichkar
 ## github.com/sichkar-valentyn
 ### Reference to:
 [1] Valentyn N Sichkar. System programming in C# for SPARQL querying through KB with interface development by creating html files // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files (date of access: XX.XX.XXXX)
