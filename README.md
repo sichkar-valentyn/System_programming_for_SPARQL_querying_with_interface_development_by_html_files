@@ -7,19 +7,26 @@ System programming in C# for SPARQL querying through KB with interface developme
 ## Description
 Program creates .html files for each class, property and instance. Program generates index.html file out of all .html files as well as KB.n3 file out of all .n3 files. Also, program provides user interface for SPARQL quering through KB.n3 file.
 
-## KB index.html file
+## Content
+* <a href="#KB index.html file">KB index.html file</a>
+* <a href="#Generating index html file out of all html files as well as KB.n3 file out of all n3 files">Generating index html file out of all html files as well as KB.n3 file out of all n3 files</a>
+* <a href="#Interface for users querying">Interface for users querying</a>
+* <a href="#Finding what are sensors">Finding what are sensors</a>
+* <a href="#Finding what are accident factors">Finding what are accident factors</a>
+
+### <a name="KB index.html file">KB index.html file</a>
 ![Results](images/KB_index_html.png)
 
-## Generating index html file out of all html files as well as KB.n3 file out of all n3 files
+### <a name="Generating index html file out of all html files as well as KB.n3 file out of all n3 files">Generating index html file out of all html files as well as KB.n3 file out of all n3 files</a>
 ![Results](images/Generating_index_html_file_out_of_all_html_files_as_well_as_KB.n3_file_out_of_all_n3_files.png)
 
-## Interface for users querying
+### <a name="Interface for users querying">Interface for users querying</a>
 ![Results](images/Interface_for_users_quering.png)
 
-## Finding what are sensors
+### <a name="Finding what are sensors">Finding what are sensors</a>
 ![Results](images/Finding_what_are_sensors.png)
 
-## Finding what are accident factors
+### <a name="Finding what are accident factors">Finding what are accident factors</a>
 ![Results](images/Finding_what_are_accident_factors.png)
 
 ## MIT License
