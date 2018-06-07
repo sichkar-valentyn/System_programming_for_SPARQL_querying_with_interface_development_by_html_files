@@ -1,5 +1,5 @@
 # System programming for SPARQL querying with interface development by html files
-System programming in C# for SPARQL querying through Knowledge Base with interface development by creating .html files
+System programming in C# for SPARQL querying through Knowledge Base with interface development by creating .html files.
 
 ### Reference to:
 [1] Valentyn N Sichkar. System programming in C# for SPARQL querying through KB with interface development by creating html files // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files (date of access: XX.XX.XXXX)
