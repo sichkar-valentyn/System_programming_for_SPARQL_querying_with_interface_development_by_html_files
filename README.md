@@ -5,7 +5,7 @@ System programming in C# for SPARQL querying through Knowledge Base (KB) with in
 [1] Valentyn N Sichkar. System programming in C# for SPARQL querying through KB with interface development by creating html files // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files (date of access: XX.XX.XXXX)
 
 ## Description
-Program creates *.html* files for each class, property and instance. Program generates index.html file out of all *.html* files as well as *KB.n3* file out of all *.n3* files. Also, program provides user interface for SPARQL quering through KB.n3 file.
+Program creates *.html* files for each class, property and instance. Program generates index.html file out of all *.html* files as well as *KB.n3* file out of all *.n3* files. Also, program provides user interface for SPARQL quering through *KB.n3* file.
 
 ## Content
 * <a href="#KB index.html file">KB index.html file</a>
