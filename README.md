@@ -1,6 +1,9 @@
 # System programming for SPARQL querying with interface development by html files
 System programming in C# for <b>SPARQL querying</b> through Knowledge Base (KB) with interface development by creating *.html* files.
 
+### Courses:
+* Explore the course **"Convolutional Neural Networks for Image Classification"** here: https://stepik.org/course/53801/promo
+
 ### Reference to:
 [1] Valentyn N Sichkar. System programming in C# for SPARQL querying through KB with interface development by creating html files // GitHub platform [Electronic resource]. URL: https://github.com/sichkar-valentyn/System_programming_for_SPARQL_querying_with_interface_development_by_html_files (date of access: XX.XX.XXXX)
 
